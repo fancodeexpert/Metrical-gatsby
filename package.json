@@ -1,0 +1,70 @@
+{
+  "name": "metrical-marketing",
+  "private": true,
+  "description": "Metrical marketing website",
+  "version": "0.1.0",
+  "author": "Saad Asad <saad@focusteck.com>",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "env-cmd": "^10.1.0",
+    "gatsby": "^2.15.31",
+    "gatsby-background-image": "^1.0.1",
+    "gatsby-image": "^2.2.24",
+    "gatsby-plugin-env-variables": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.2.20",
+    "gatsby-plugin-nprogress": "^2.2.3",
+    "gatsby-plugin-offline": "^3.0.12",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-s3": "^0.3.3",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.2.28",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.1.29",
+    "gatsby-source-googlemaps-geocoding": "^1.0.0",
+    "gatsby-source-googlemaps-static": "^1.1.1",
+    "gatsby-transformer-remark": "^2.7.1",
+    "gatsby-transformer-sharp": "^2.2.20",
+    "google-map-react": "^1.1.7",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "react-loading-overlay": "^1.0.1",
+    "react-render-html": "^0.6.0",
+    "react-spinners": "^0.8.1",
+    "sweetalert2": "^9.10.12"
+  },
+  "devDependencies": {
+    "bufferutil": "^4.0.1",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3",
+    "utf-8-validate": "^5.0.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "env-cmd -f .env gatsby build",
+    "develop": "env-cmd -f .env-local gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start_dev": "env-cmd -f .env-dev gatsby develop ",
+    "deploy": "gatsby-plugin-s3 deploy",
+    "build-deploy": "env-cmd -f .env gatsby build && gatsby-plugin-s3 deploy",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "heroku-postbuild": "gatsby build",
+    "start": "gatsby serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/saadasad1/metrical-website.git"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.1.2"
+  }
+}
